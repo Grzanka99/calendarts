@@ -22,7 +22,9 @@
     "transpiled",
     "typedoc",
     "untracked",
-    "luxon"
+    "luxon",
+    "cgsh",
+    "calendarts",
   ],
   "flagWords": [],
   "ignorePaths": [
