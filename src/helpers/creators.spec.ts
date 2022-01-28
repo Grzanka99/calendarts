@@ -13,6 +13,7 @@ test('Should return 2021, december 28th', (t) => {
     fullJSONDate: shouldBe.toJSON(),
     number: 28,
     weekDay: 2,
+    isInCurrentMonth: false,
   };
 
   const actual = createDayBack(today.toISO(), 4);
@@ -28,6 +29,7 @@ test('Should return proper object', (t) => {
     fullJSONDate: JSONDate,
     number: 12,
     weekDay: 7,
+    isInCurrentMonth: true,
   };
 
   const actual = createDay(12, 12, 2021);
