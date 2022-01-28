@@ -25,7 +25,7 @@ test('prefix for August 2022 should be 0', (t) => {
   t.is(actual.prefix, 0);
 });
 
-test.skip('should generate proper array of month', (t) => {
+test('should generate proper array of month', (t) => {
   const actual = getMonthArray(getMonth(0, 2022));
 
   t.is(actual.length, 6);

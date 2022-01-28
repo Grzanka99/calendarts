@@ -17,8 +17,6 @@ test('Should return 2021, december 28th', (t) => {
 
   const actual = createDayBack(today.toISO(), 4);
 
-  console.log(actual);
-
   t.is(actual.fullJSONDate, shouldBe.toISO());
   t.deepEqual(actual, expected);
 });
