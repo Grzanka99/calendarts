@@ -9,6 +9,7 @@ export const createDay = (day: number, month: number, year: number): Day => {
     number: day,
     fullJSONDate,
     weekDay: DateTime.fromISO(fullJSONDate).weekday,
+    isInCurrentMonth: true,
   };
 };
 
@@ -21,14 +22,20 @@ export const createDayBack = (isoDay: string, diff: number): Day => {
   const day = DateTime.fromISO(isoDay);
   const newDay = day.minus({ days: diff });
 
-  return createDay(newDay.day, newDay.month, newDay.year);
+  return {
+    ...createDay(newDay.day, newDay.month, newDay.year),
+    isInCurrentMonth: false,
+  };
 };
 
 export const createDayForward = (isoDay: string, diff: number): Day => {
   const day = DateTime.fromISO(isoDay);
   const newDay = day.plus({ days: diff });
 
-  return createDay(newDay.day, newDay.month, newDay.year);
+  return {
+    ...createDay(newDay.day, newDay.month, newDay.year),
+    isInCurrentMonth: false,
+  };
 };
 
 export const createVirtualDays = (

@@ -2,6 +2,7 @@ export type Day = {
   readonly number: number;
   readonly fullJSONDate: string;
   readonly weekDay: number;
+  readonly isInCurrentMonth: boolean;
 };
 
 export type MonthCalendar = {
