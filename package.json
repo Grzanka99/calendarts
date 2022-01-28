@@ -1,6 +1,5 @@
 {
-  "name": "calendarts",
-  "scope": "cgsh",
+  "name": "@cgsh/calendarts",
   "version": "1.0.0",
   "description": "Javascript/Typescript library for generate calendar",
   "main": "build/main/index.js",
