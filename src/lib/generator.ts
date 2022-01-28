@@ -6,7 +6,7 @@ import { Day, MonthArray, MonthCalendar } from '../types';
 const prefix = (firstDay: Day) => firstDay.weekDay - 1;
 
 export function getMonth(month: number, year?: number): MonthCalendar {
-  const localYear: number = year ?? DateTime.now().year;
+  const localYear: number = year ? year : DateTime.now().year;
   const localMonth: number = month + 1;
   const numberOfDays: number = DateTime.local(
     localYear,
