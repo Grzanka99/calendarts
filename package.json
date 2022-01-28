@@ -1,6 +1,6 @@
 {
   "name": "@cgsh/calendarts",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Javascript/Typescript library for generate calendar",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
